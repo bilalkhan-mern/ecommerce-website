@@ -77,14 +77,30 @@ export default function Products({ products, loading, error, onBuyNow, orderingI
 
   const value = search.trim().toLowerCase();
   const searchResults = value
-    ? visibleProducts.filter((product) =>
-        [product.name, product.description, product.brand].join(" ").toLowerCase().includes(value)
-      )
+    ? visibleProducts.filter((product) => {
+        const searchableText = [product.name, product.description, product.brand, product.category]
+          .join(" ")
+          .toLowerCase();
+        return searchableText.includes(value);
+      })
     : visibleProducts;
 
   const hasSearchResults = searchResults.length > 0;
   const displayedProducts = hasSearchResults ? searchResults : [];
   const discountProducts = [...displayedProducts].sort((left, right) => right.discount - left.discount).slice(0, 3);
+
+  useEffect(() => {
+    if (!search.trim() || !displayedProducts.length) {
+      return;
+    }
+
+    const currentSelectedId = selectedProduct?._id;
+    const selectedIsVisible = displayedProducts.some((product) => product._id === currentSelectedId);
+
+    if (!selectedIsVisible) {
+      setSelectedProduct(displayedProducts[0]);
+    }
+  }, [displayedProducts, search, selectedProduct]);
 
   let pageTitle = "Browse every electronics item";
   let pageSubtitle = "Explore curated electronics across categories, deals, and new arrivals.";

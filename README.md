@@ -1,62 +1,91 @@
-# MERN Electronics Ecommerce
+# Electro Hub
 
-A beginner-friendly MERN stack electronics ecommerce project with React, React Router, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT authentication, and bcrypt.
+A clean electronics ecommerce website built for a fresher-level MERN project demo. The store focuses on electronics only, with a responsive home page, searchable product listings, product details, login/register screens, and an order flow that saves purchases to the database.
 
 ## Features
 
-- Electronics-only storefront
-- Dynamic product cards loaded from MongoDB Atlas
-- Category and section-based navbar navigation
-- Search, featured products, and discount product cards
-- Login, register, JWT session persistence
-- Buy flow that saves orders in MongoDB Atlas
-- Responsive layout for desktop and mobile
+- Electronics-only home page with hero, featured products, and discount cards
+- Product listing page with search, categories, and section-based navigation
+- Product detail view with image, price, and purchase button
+- Login and register pages with persistent session support
+- Buy flow that saves orders after login
+- Responsive layout for mobile and desktop
 
-## Tech Stack
+## Folder Structure
 
-- Frontend: React, React Router, Tailwind CSS, Axios
-- Backend: Node.js, Express.js
-- Database: MongoDB Atlas with Mongoose
-- Auth: JWT and bcrypt
-
-## Product Fields
-
-```js
-{
-  name,
-  brand,
-  category,
-  price,
-  oldPrice,
-  discount,
-  description,
-  image
-}
+```bash
+project/
+├── client/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── utils/
+│       ├── App.jsx
+│       └── main.jsx
+└── server/
+    ├── models/
+    ├── routes/
+    ├── middleware/
+    ├── config/
+    └── server.js
 ```
 
-## Run Locally
+## Setup
 
-### Backend
+### 1. Install dependencies
 
 ```bash
 cd server
 npm install
-copy .env.example .env
-npm run seed
+
+cd ../client
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a `.env` file inside `server/` and add your MongoDB connection string and JWT secret.
+
+Example:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+### 3. Start the backend
+
+```bash
+cd server
 npm run dev
 ```
 
-### Frontend
+### 4. Start the frontend
 
 ```bash
 cd client
-npm install
-copy .env.example .env
 npm run dev
 ```
 
+## Main Pages
+
+- Home
+- Products
+- Login
+- Register
+- Success
+
+## Product Experience
+
+- Electronics categories
+- Search by product name, brand, description, or category
+- Featured discount cards
+- Detailed product view
+- Buy Now flow after login
+
 ## Notes
 
-- Add or edit products in MongoDB Atlas and refresh the UI to see them.
-- The project uses simple React hooks only.
-- No Redux, no TypeScript, and no advanced architecture were used.
+- Product data is loaded from the backend and shown in clean cards.
+- Images are assigned to keep the electronics store visually varied.
+- The code stays simple and beginner-friendly.
