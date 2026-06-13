@@ -1,88 +1,60 @@
-const footerColumns = [
-  {
-    title: "Shop",
-    links: [
-      { label: "Men Clothing", action: { audience: "men", type: "all", search: "" } },
-      { label: "Women Clothing", action: { audience: "women", type: "all", search: "" } },
-      { label: "Kids Clothing", action: { audience: "kids", type: "all", search: "" } },
-      { label: "New Arrivals", action: { audience: "all", type: "all", search: "" } }
-    ]
-  },
-  {
-    title: "Categories",
-    links: [
-      { label: "Shirts", action: { audience: "all", type: "shirt", search: "" } },
-      { label: "Pants", action: { audience: "all", type: "pant", search: "" } },
-      { label: "Dresses", action: { audience: "all", type: "dress", search: "" } },
-      { label: "Blazers", action: { audience: "all", type: "blazer", search: "" } }
-    ]
-  },
-  {
-    title: "Collections",
-    links: [
-      { label: "Formal Wear", action: { audience: "all", type: "all", search: "formal" } },
-      { label: "Casual Wear", action: { audience: "all", type: "all", search: "casual" } },
-      { label: "Party Wear", action: { audience: "all", type: "all", search: "party" } },
-      { label: "Daily Essentials", action: { audience: "all", type: "all", search: "essentials" } }
-    ]
-  },
-  {
-    title: "Support",
-    links: [
-      { label: "Order Help", href: "#account" },
-      { label: "Shipping Info", href: "#checkout" },
-      { label: "Returns", href: "#account" },
-      { label: "Contact Store", href: "#footer-contact" }
-    ]
-  }
-];
+import { Link } from "react-router-dom";
 
-export default function Footer({ onNavSelect }) {
+export default function Footer() {
   return (
-    <footer className="mt-10 border-t border-brand-sand bg-white">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_repeat(4,0.8fr)] lg:px-8">
-        <div id="footer-contact">
-          <p className="font-['Playfair_Display'] text-2xl font-bold text-brand-ink">StyleCart</p>
-          <p className="mt-3 max-w-xs text-sm leading-6 text-slate-600">
-            Everyday clothing store for men, women and kids with curated formal, casual and party collections.
+    <footer className="mt-16 border-t border-white/60 bg-slate-950 text-slate-200">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div>
+          <p className="text-lg font-semibold text-white">Electro Hub</p>
+          <p className="mt-3 max-w-sm text-sm leading-6 text-slate-400">
+            A fresher-friendly MERN electronics store with simple authentication, database products, and order saving.
           </p>
-          <div className="mt-4 space-y-1 text-sm text-slate-600">
-            <p>Email: support@stylecart.com</p>
-            <p>Phone: +91 98765 43210</p>
-            <p>Location: New Delhi, India</p>
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Main Links</p>
+          <div className="mt-4 flex flex-col gap-3 text-sm">
+            <Link to="/" className="text-slate-300 transition hover:text-white">
+              Home
+            </Link>
+            <Link to="/products" className="text-slate-300 transition hover:text-white">
+              View All
+            </Link>
+            <Link to="/login" className="text-slate-300 transition hover:text-white">
+              Login
+            </Link>
           </div>
         </div>
 
-        {footerColumns.map((column) => (
-          <div key={column.title}>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-cocoa">{column.title}</p>
-            <div className="mt-4 space-y-2 text-sm text-slate-600">
-              {column.links.map((item) =>
-                item.action ? (
-                  <button
-                    key={item.label}
-                    type="button"
-                    onClick={() => onNavSelect(item.action)}
-                    className="block text-left transition hover:text-brand-clay"
-                  >
-                    {item.label}
-                  </button>
-                ) : (
-                  <a key={item.label} href={item.href} className="block transition hover:text-brand-clay">
-                    {item.label}
-                  </a>
-                )
-              )}
-            </div>
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Categories</p>
+          <div className="mt-4 flex flex-col gap-3 text-sm">
+            <Link to="/products?category=laptops" className="text-slate-300 transition hover:text-white">
+              Laptops
+            </Link>
+            <Link to="/products?category=mobiles" className="text-slate-300 transition hover:text-white">
+              Mobiles
+            </Link>
+            <Link to="/products?category=audio" className="text-slate-300 transition hover:text-white">
+              Audio
+            </Link>
+            <Link to="/products?category=accessories" className="text-slate-300 transition hover:text-white">
+              Accessories
+            </Link>
           </div>
-        ))}
+        </div>
+
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Project Notes</p>
+          <ul className="mt-4 space-y-2 text-sm text-slate-300">
+            <li>Frontend: React + Router + Tailwind</li>
+            <li>Backend: Node + Express + Mongoose</li>
+            <li>Images and product data are stored in MongoDB</li>
+          </ul>
+        </div>
       </div>
-
-      <div className="border-t border-[#eee3d3]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-4 text-sm text-slate-500 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
-          <p>Copyright 2026 StyleCart. All rights reserved.</p>
-          <p>Mens | Womens | Kids | Formal | Casual | Party</p>
-        </div>
+      <div className="border-t border-white/10 py-4 text-center text-sm text-slate-500">
+        Built for a fresher-level electronics ecommerce demo.
       </div>
     </footer>
   );

@@ -10,10 +10,12 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 5000;
+const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
 
 app.use(
   cors({
-    origin: "http://localhost:5173"
+    origin: clientUrl,
+    credentials: true
   })
 );
 app.use(express.json());
@@ -27,6 +29,10 @@ app.get("/", (_request, response) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
+
+app.use((_request, response) => {
+  response.status(404).json({ message: "Route not found." });
+});
 
 connectDB()
   .then(() => {

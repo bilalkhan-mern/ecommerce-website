@@ -7,30 +7,33 @@ const productSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
-    audience: {
+    brand: {
       type: String,
-      enum: ["men", "women", "kids"],
-      required: true
+      required: true,
+      trim: true
     },
-    type: {
+    category: {
       type: String,
-      enum: ["shirt", "pant", "tshirt", "blazer", "kurti", "dress", "hoodie", "jacket"],
-      required: true
-    },
-    section: {
-      type: String,
-      enum: ["formal", "casual", "party", "essentials"],
-      required: true
+      required: true,
+      trim: true
     },
     price: {
       type: Number,
       required: true
     },
-    image: {
-      type: String,
+    oldPrice: {
+      type: Number,
+      required: true
+    },
+    discount: {
+      type: Number,
       required: true
     },
     description: {
+      type: String,
+      required: true
+    },
+    image: {
       type: String,
       required: true
     }

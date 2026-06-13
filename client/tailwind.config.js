@@ -4,16 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          cream: "#f8f3eb",
-          sand: "#e9dcc7",
-          cocoa: "#795548",
-          ink: "#1f2937",
-          clay: "#c27b57"
-        }
+        surface: "#f5f7fb"
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(31, 41, 55, 0.12)"
+        soft: "0 20px 60px rgba(15, 23, 42, 0.12)"
       }
     }
   },

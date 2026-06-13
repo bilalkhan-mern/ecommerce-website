@@ -1,40 +1,42 @@
-# StyleCart Ecommerce
+# MERN Electronics Ecommerce
 
-A beginner-friendly full-stack ecommerce project for shirts and pants across men, women, and kids.
-
-## Tech Stack
-
-- React.js
-- Tailwind CSS
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-
-## Project Structure
-
-- `client` - React frontend
-- `server` - Express + MongoDB backend
+A beginner-friendly MERN stack electronics ecommerce project with React, React Router, Tailwind CSS, Node.js, Express.js, MongoDB Atlas, JWT authentication, and bcrypt.
 
 ## Features
 
-- Browse products by audience: men, women, kids
-- Browse by type: shirts, pants
-- Search and featured sections
-- Add to cart and update quantity
-- Simple checkout form
-- No payment gateway
-- Order is saved in MongoDB and shown as manual confirmation
-- Ready-to-seed demo products
+- Electronics-only storefront
+- Dynamic product cards loaded from MongoDB Atlas
+- Category and section-based navbar navigation
+- Search, featured products, and discount product cards
+- Login, register, JWT session persistence
+- Buy flow that saves orders in MongoDB Atlas
+- Responsive layout for desktop and mobile
 
-## Run Frontend
+## Tech Stack
 
-```bash
-cd client
-npm install
-npm run dev
+- Frontend: React, React Router, Tailwind CSS, Axios
+- Backend: Node.js, Express.js
+- Database: MongoDB Atlas with Mongoose
+- Auth: JWT and bcrypt
+
+## Product Fields
+
+```js
+{
+  name,
+  brand,
+  category,
+  price,
+  oldPrice,
+  discount,
+  description,
+  image
+}
 ```
 
-## Run Backend
+## Run Locally
+
+### Backend
 
 ```bash
 cd server
@@ -44,12 +46,17 @@ npm run seed
 npm run dev
 ```
 
-## MongoDB
+### Frontend
 
-Update `MONGO_URI` inside `server/.env` before running the backend.
+```bash
+cd client
+npm install
+copy .env.example .env
+npm run dev
+```
 
-## Beginner Notes
+## Notes
 
-- Payment integration is intentionally skipped
-- Order button saves the order and shows a success message
-- You can later add auth, admin panel, and real payment if needed
+- Add or edit products in MongoDB Atlas and refresh the UI to see them.
+- The project uses simple React hooks only.
+- No Redux, no TypeScript, and no advanced architecture were used.

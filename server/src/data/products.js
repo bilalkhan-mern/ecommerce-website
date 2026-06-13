@@ -1,416 +1,134 @@
 export const seedProducts = [
   {
-    name: "Classic Oxford Shirt",
-    audience: "men",
-    type: "shirt",
-    section: "formal",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=800&q=80",
-    description: "Soft cotton shirt for office and casual wear with a clean premium look."
+    name: "ApexBook Pro 14",
+    brand: "Apex",
+    category: "laptops",
+    price: 89999,
+    oldPrice: 104999,
+    discount: 14,
+    description:
+      "14-inch productivity laptop with an efficient processor, sharp display, and all-day battery life for study and work.",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Slim Fit Formal Pant",
-    audience: "men",
-    type: "pant",
-    section: "formal",
-    price: 1799,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Modern slim fit pant designed for daily office styling and evening outings."
+    name: "Nova Phone X2",
+    brand: "Nova",
+    category: "mobiles",
+    price: 54999,
+    oldPrice: 62999,
+    discount: 13,
+    description:
+      "Feature-rich smartphone with a bright AMOLED display, reliable cameras, and smooth performance for everyday use.",
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Relaxed Satin Shirt",
-    audience: "women",
-    type: "shirt",
-    section: "party",
-    price: 1599,
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
-    description: "Easy drape shirt with soft shine, comfortable for work and weekend looks."
+    name: "SoundWave ANC Headphones",
+    brand: "SoundWave",
+    category: "audio",
+    price: 12999,
+    oldPrice: 15999,
+    discount: 19,
+    description:
+      "Over-ear wireless headphones with active noise cancellation, deep bass, and long playback for travel or office work.",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "High Waist Comfort Pant",
-    audience: "women",
-    type: "pant",
-    section: "essentials",
-    price: 1899,
-    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
-    description: "Comfort-first pants with a stylish silhouette for daily fashion."
+    name: "Pulse Smart Watch 2",
+    brand: "Pulse",
+    category: "wearables",
+    price: 7999,
+    oldPrice: 9999,
+    discount: 20,
+    description:
+      "Smartwatch with health tracking, Bluetooth calling, and clean sports styling for daily fitness monitoring.",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Color Pop Kids Shirt",
-    audience: "kids",
-    type: "shirt",
-    section: "casual",
-    price: 999,
-    image: "https://images.unsplash.com/photo-1519238359922-989348752efb?auto=format&fit=crop&w=800&q=80",
-    description: "Playful shirt made for movement, fun days out, and festive family time."
-  },
-  {
-    name: "Kids Easy Play Pant",
-    audience: "kids",
-    type: "pant",
-    section: "essentials",
-    price: 1099,
-    image: "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=800&q=80",
-    description: "Flexible fit pants for active kids with soft fabric and easy comfort."
-  },
-  {
-    name: "Weekend Checked Shirt",
-    audience: "men",
-    type: "shirt",
-    section: "casual",
-    price: 1299,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    description: "A smart checked shirt that works well with jeans or tailored pants."
-  },
-  {
-    name: "Straight Fit Daily Pant",
-    audience: "women",
-    type: "pant",
-    section: "casual",
-    price: 1699,
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
-    description: "Clean daily wear pants with a straight fit that feels polished but easy."
-  },
-  {
-    name: "Mini Explorer Shirt",
-    audience: "kids",
-    type: "shirt",
-    section: "casual",
-    price: 899,
-    image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=800&q=80",
-    description: "Printed kids shirt with lightweight fabric for cheerful everyday style."
-  },
-  {
-    name: "Midnight Office Blazer",
-    audience: "men",
-    type: "blazer",
-    section: "formal",
-    price: 2999,
-    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
-    description: "Structured blazer for office meetings and polished evening dressing."
-  },
-  {
-    name: "Urban Polo T-Shirt",
-    audience: "men",
-    type: "tshirt",
-    section: "casual",
-    price: 1199,
-    image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
-    description: "Comfortable polo t-shirt for daily wear with a neat casual finish."
-  },
-  {
-    name: "Weekend Cargo Pant",
-    audience: "men",
-    type: "pant",
-    section: "casual",
-    price: 1899,
-    image: "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80",
-    description: "Relaxed cargo pants built for travel, daily use, and casual styling."
-  },
-  {
-    name: "Soft Knit Hoodie",
-    audience: "women",
-    type: "hoodie",
-    section: "casual",
-    price: 1799,
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
-    description: "Easy hoodie with a soft hand feel for cool day layering."
-  },
-  {
-    name: "Evening Flow Dress",
-    audience: "women",
-    type: "dress",
-    section: "party",
+    name: "VoltMax Power Bank 20K",
+    brand: "VoltMax",
+    category: "accessories",
     price: 2499,
-    image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80",
-    description: "Elegant dress made for dinners, parties, and special occasions."
+    oldPrice: 3499,
+    discount: 29,
+    description:
+      "High-capacity power bank with fast charging support, dual output, and dependable backup for travel and daily use.",
+    image: "https://images.unsplash.com/photo-1609592806596-4d9f4a0f1c0c?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Classic Office Kurti",
-    audience: "women",
-    type: "kurti",
-    section: "formal",
-    price: 1599,
-    image: "https://images.unsplash.com/photo-1610030469668-56644f5e0f4c?auto=format&fit=crop&w=800&q=80",
-    description: "Minimal kurti for office days with a clean straight silhouette."
+    name: "PixelView 27 Monitor",
+    brand: "PixelView",
+    category: "accessories",
+    price: 18999,
+    oldPrice: 21999,
+    discount: 14,
+    description:
+      "27-inch full HD monitor with slim bezels and vivid color output for office tasks, design work, and entertainment.",
+    image: "https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Girls Party Dress",
-    audience: "kids",
-    type: "dress",
-    section: "party",
-    price: 1399,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
-    description: "Festive kids dress with playful color and comfortable inner lining."
+    name: "GameCore Console X",
+    brand: "GameCore",
+    category: "gaming",
+    price: 45999,
+    oldPrice: 49999,
+    discount: 8,
+    description:
+      "Next-gen gaming console with fast load times, smooth gameplay, and a simple living-room friendly design.",
+    image: "https://images.unsplash.com/photo-1605901309584-818e25960a8f?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Kids Warm Hoodie",
-    audience: "kids",
-    type: "hoodie",
-    section: "essentials",
-    price: 1199,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Everyday hoodie for school runs, parks, and easy winter layering."
+    name: "HomeGuard Wi-Fi Camera",
+    brand: "HomeGuard",
+    category: "smart-home",
+    price: 3999,
+    oldPrice: 4999,
+    discount: 20,
+    description:
+      "Compact smart security camera with app alerts, night vision, and easy installation for home monitoring.",
+    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Denim Jacket Blue",
-    audience: "women",
-    type: "jacket",
-    section: "casual",
-    price: 2199,
-    image: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
-    description: "Light denim jacket for layering over dresses, tees, and everyday sets."
+    name: "SwiftTab 11 Tablet",
+    brand: "Swift",
+    category: "tablets",
+    price: 32999,
+    oldPrice: 37999,
+    discount: 13,
+    description:
+      "Lightweight tablet for reading, meetings, media, and study with a balanced display size and reliable battery.",
+    image: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Sharp White Formal Shirt",
-    audience: "men",
-    type: "shirt",
-    section: "formal",
-    price: 1599,
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
-    description: "Crisp white shirt that pairs easily with formal trousers and blazers."
+    name: "ByteHub Mechanical Keyboard",
+    brand: "ByteHub",
+    category: "accessories",
+    price: 4999,
+    oldPrice: 6499,
+    discount: 23,
+    description:
+      "Mechanical keyboard with tactile feedback and durable keycaps, ideal for typing, coding, and gaming setups.",
+    image: "https://images.unsplash.com/photo-1511467687858-23d96c32e0f7?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Printed Holiday T-Shirt",
-    audience: "kids",
-    type: "tshirt",
-    section: "casual",
-    price: 799,
-    image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80",
-    description: "Lightweight kids t-shirt with cheerful print and breathable comfort."
+    name: "AirFlex Earbuds Pro",
+    brand: "AirFlex",
+    category: "audio",
+    price: 6999,
+    oldPrice: 8999,
+    discount: 22,
+    description:
+      "Compact wireless earbuds with crisp sound, touch controls, and pocket-friendly charging case for everyday listening.",
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    name: "Elegant Straight Pant",
-    audience: "women",
-    type: "pant",
-    section: "formal",
-    price: 1999,
-    image: "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=800&q=80",
-    description: "Tailored straight pants for formal wear, meetings, and polished outfits."
-  },
-  {
-    name: "Sky Blue Linen Shirt",
-    audience: "men",
-    type: "shirt",
-    section: "casual",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
-    description: "Breathable linen shirt with a relaxed shape for summer casual styling."
-  },
-  {
-    name: "Textured Weekend Blazer",
-    audience: "men",
-    type: "blazer",
-    section: "party",
-    price: 3299,
-    image: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=800&q=80",
-    description: "A smart blazer for dinner parties, receptions and elevated evening outfits."
-  },
-  {
-    name: "Navy Office Trousers",
-    audience: "men",
-    type: "pant",
-    section: "formal",
-    price: 1899,
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
-    description: "Flat-front formal trousers that work well with shirts, polos and blazers."
-  },
-  {
-    name: "Relaxed Street T-Shirt",
-    audience: "men",
-    type: "tshirt",
-    section: "casual",
-    price: 999,
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
-    description: "Soft cotton t-shirt with a casual relaxed fit for everyday comfort."
-  },
-  {
-    name: "Winter Zip Hoodie",
-    audience: "men",
-    type: "hoodie",
-    section: "essentials",
-    price: 1899,
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
-    description: "A practical hoodie for layering through cooler months and travel days."
-  },
-  {
-    name: "Tailored Black Blazer",
-    audience: "women",
-    type: "blazer",
-    section: "formal",
-    price: 3199,
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
-    description: "A sharp blazer for office dressing, meetings and polished formal looks."
-  },
-  {
-    name: "Floral Day Dress",
-    audience: "women",
-    type: "dress",
-    section: "casual",
-    price: 2299,
-    image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80",
-    description: "A lightweight floral dress that works beautifully for daily and brunch wear."
-  },
-  {
-    name: "Soft Beige Kurti",
-    audience: "women",
-    type: "kurti",
-    section: "essentials",
-    price: 1399,
-    image: "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80",
-    description: "Comfort kurti in soft beige, perfect for everyday wear and casual office use."
-  },
-  {
-    name: "Wide Leg Statement Pant",
-    audience: "women",
-    type: "pant",
-    section: "party",
-    price: 2099,
-    image: "https://images.unsplash.com/photo-1506629905607-d405b7a39d43?auto=format&fit=crop&w=800&q=80",
-    description: "Elegant wide-leg pants for statement dressing and festive styling."
-  },
-  {
-    name: "Basic Cotton T-Shirt",
-    audience: "women",
-    type: "tshirt",
-    section: "essentials",
-    price: 899,
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
-    description: "An easy everyday cotton t-shirt that pairs well with jeans and trousers."
-  },
-  {
-    name: "Layered Denim Jacket",
-    audience: "women",
-    type: "jacket",
-    section: "party",
-    price: 2399,
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
-    description: "A dressy denim jacket for layering through evenings and travel days."
-  },
-  {
-    name: "Boys Smart Party Shirt",
-    audience: "kids",
-    type: "shirt",
-    section: "party",
-    price: 1199,
-    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
-    description: "A crisp kids party shirt for birthdays, dinners and festive events."
-  },
-  {
-    name: "Girls Casual Hoodie",
-    audience: "kids",
-    type: "hoodie",
-    section: "casual",
-    price: 1099,
-    image: "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80",
-    description: "Warm and soft hoodie for active days, school runs and daily comfort."
-  },
-  {
-    name: "Kids Straight Fit Pant",
-    audience: "kids",
-    type: "pant",
-    section: "formal",
-    price: 1199,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Smart kids pants for school events, functions and festive dressing."
-  },
-  {
-    name: "Kids Printed Jacket",
-    audience: "kids",
-    type: "jacket",
-    section: "casual",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21d?auto=format&fit=crop&w=800&q=80",
-    description: "Light jacket with fun prints and comfortable everyday layering."
-  },
-  {
-    name: "Festive Mini Kurti Set",
-    audience: "kids",
-    type: "kurti",
-    section: "party",
-    price: 1299,
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
-    description: "Festive kurti-inspired set for family occasions and celebrations."
-  },
-  {
-    name: "Signature White Polo",
-    audience: "men",
-    type: "tshirt",
-    section: "formal",
-    price: 1299,
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80",
-    description: "A polished polo that balances formal neatness with day-long comfort."
-  },
-  {
-    name: "Rust Casual Shirt",
-    audience: "men",
-    type: "shirt",
-    section: "casual",
-    price: 1399,
-    image: "https://images.unsplash.com/photo-1603252109612-24fa03d1456d?auto=format&fit=crop&w=800&q=80",
-    description: "A warm rust shirt for weekend style, outings and casual layering."
-  },
-  {
-    name: "Grey Travel Hoodie",
-    audience: "men",
-    type: "hoodie",
-    section: "casual",
-    price: 1699,
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
-    description: "Easy zip hoodie made for travel, commuting and laid-back dressing."
-  },
-  {
-    name: "Pleated Party Dress",
-    audience: "women",
-    type: "dress",
-    section: "party",
-    price: 2699,
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
-    description: "Pleated silhouette dress created for receptions, dinners and celebration looks."
-  },
-  {
-    name: "Office Straight Kurti",
-    audience: "women",
-    type: "kurti",
-    section: "formal",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1610030469668-56644f5e0f4c?auto=format&fit=crop&w=800&q=80",
-    description: "Clean office-ready kurti with minimal styling and all-day comfort."
-  },
-  {
-    name: "Soft Lounge Pant",
-    audience: "women",
-    type: "pant",
-    section: "essentials",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1506629905607-d405b7a39d43?auto=format&fit=crop&w=800&q=80",
-    description: "Comfort lounge pants that feel easy at home and neat outdoors."
-  },
-  {
-    name: "Girls Floral Day Dress",
-    audience: "kids",
-    type: "dress",
-    section: "casual",
-    price: 1199,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
-    description: "A floral kids dress for weekend outings and warm-weather family plans."
-  },
-  {
-    name: "Boys Essential T-Shirt",
-    audience: "kids",
-    type: "tshirt",
-    section: "essentials",
-    price: 699,
-    image: "https://images.unsplash.com/photo-1503919545889-aef636e10ad4?auto=format&fit=crop&w=800&q=80",
-    description: "Simple cotton t-shirt for daily school wear and playtime comfort."
-  },
-  {
-    name: "Junior Celebration Blazer",
-    audience: "kids",
-    type: "blazer",
-    section: "party",
-    price: 1999,
-    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
-    description: "Smart kids blazer for weddings, parties and family formal events."
+    name: "RouterMax AX1800",
+    brand: "RouterMax",
+    category: "networking",
+    price: 5999,
+    oldPrice: 7499,
+    discount: 20,
+    description:
+      "Dual-band Wi-Fi router with stable coverage and fast connections for homes, study spaces, and small offices.",
+    image: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80"
   }
 ];
