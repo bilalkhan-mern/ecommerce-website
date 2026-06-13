@@ -44,17 +44,17 @@ export default function Login({ onAuthSuccess, user }) {
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">Login</p>
             <h1 className="mt-4 text-4xl font-bold">Access your account and place an order.</h1>
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
-              JWT token is saved in localStorage so the user stays logged in after refresh.
+              Sign in once and continue shopping without losing your place.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-5 text-sm text-slate-300">
-            Logged-in users can click Buy Now and place orders instantly.
+            Logged-in shoppers can tap Buy Now and place orders instantly.
           </div>
         </div>
 
         <div className="p-8 sm:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">Welcome back</p>
-          <h2 className="mt-3 text-3xl font-bold text-slate-950">Login to continue</h2>
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">Login to continue shopping</h2>
           <p className="mt-2 text-sm leading-6 text-slate-600">
             If you came from Buy Now, complete this login and the purchase will continue automatically.
           </p>

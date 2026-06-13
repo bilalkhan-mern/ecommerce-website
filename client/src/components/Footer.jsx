@@ -7,7 +7,7 @@ export default function Footer() {
         <div>
           <p className="text-lg font-semibold text-white">Electro Hub</p>
           <p className="mt-3 max-w-sm text-sm leading-6 text-slate-400">
-            A fresher-friendly MERN electronics store with simple authentication, database products, and order saving.
+            A clean electronics store for laptops, phones, audio gear, wearables, and smart home picks.
           </p>
         </div>
 
@@ -45,16 +45,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Project Notes</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-400">Store Highlights</p>
           <ul className="mt-4 space-y-2 text-sm text-slate-300">
-            <li>Frontend: React + Router + Tailwind</li>
-            <li>Backend: Node + Express + Mongoose</li>
-            <li>Images and product data are stored in MongoDB</li>
+            <li>Latest gadgets and everyday essentials</li>
+            <li>Curated product collections with clean cards</li>
+            <li>Easy browsing with clear prices and offers</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-white/10 py-4 text-center text-sm text-slate-500">
-        Built for a fresher-level electronics ecommerce demo.
+        Built for a modern electronics shopping experience.
       </div>
     </footer>
   );

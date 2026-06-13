@@ -44,19 +44,19 @@ export default function Register({ onAuthSuccess, user }) {
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-300">Register</p>
             <h1 className="mt-4 text-4xl font-bold">Create your account in a few simple steps.</h1>
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-300">
-              This project uses bcrypt for password hashing and JWT for safe sign-in flow.
+              Join the store and keep your next purchase ready whenever you return.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-5 text-sm text-slate-300">
-            After register, the token is stored in localStorage for persistent login.
+            Create your account once and shop faster next time.
           </div>
         </div>
 
         <div className="p-8 sm:p-10">
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">Join us</p>
-          <h2 className="mt-3 text-3xl font-bold text-slate-950">Create account</h2>
+          <h2 className="mt-3 text-3xl font-bold text-slate-950">Create your account</h2>
           <p className="mt-2 text-sm leading-6 text-slate-600">
-            Keep the form simple, clear, and beginner-friendly for presentation.
+            Keep the form simple, clear, and ready for a smooth electronics shopping experience.
           </p>
 
           <form className="mt-8 space-y-5" onSubmit={handleSubmit}>

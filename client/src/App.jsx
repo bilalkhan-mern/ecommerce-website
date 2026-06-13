@@ -33,7 +33,7 @@ export default function App() {
         const response = await api.get("/api/products");
         setProducts(response.data.products || []);
       } catch (error) {
-        setProductsError("Products could not be loaded. Please make sure the backend is running.");
+        setProductsError("Products could not be loaded right now. Please try again in a moment.");
       } finally {
         setLoadingProducts(false);
       }

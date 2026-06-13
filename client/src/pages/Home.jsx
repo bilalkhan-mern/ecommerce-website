@@ -11,14 +11,14 @@ export default function Home({ suggestedProducts, discountProducts, loading, err
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div className="max-w-2xl">
             <span className="inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm">
-              Freshers-friendly Electronics Store
+              Electronics Store
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Buy laptops, phones, audio gear, and smart gadgets in one clean storefront.
+              Discover laptops, phones, audio gear, and smart essentials in one clean storefront.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              The products are loaded from MongoDB Atlas, the buy flow uses JWT login, and the layout stays simple
-              enough for a fresher project demo.
+              Browse curated electronics with a smooth shopping flow, clear product details, and a polished store
+              layout.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -37,15 +37,15 @@ export default function Home({ suggestedProducts, discountProducts, loading, err
             <div className="mt-10 grid max-w-2xl grid-cols-3 gap-4">
               <div className="rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-black/5">
                 <p className="text-2xl font-bold text-slate-950">12+</p>
-                <p className="mt-1 text-sm text-slate-600">Electronics products</p>
+                <p className="mt-1 text-sm text-slate-600">Electronics categories</p>
               </div>
               <div className="rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-black/5">
-                <p className="text-2xl font-bold text-slate-950">JWT</p>
-                <p className="mt-1 text-sm text-slate-600">Auth flow</p>
+                <p className="text-2xl font-bold text-slate-950">Top Deals</p>
+                <p className="mt-1 text-sm text-slate-600">Smart savings</p>
               </div>
               <div className="rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-black/5">
-                <p className="text-2xl font-bold text-slate-950">Atlas</p>
-                <p className="mt-1 text-sm text-slate-600">Database data</p>
+                <p className="text-2xl font-bold text-slate-950">Fast Picks</p>
+                <p className="mt-1 text-sm text-slate-600">Quick browsing</p>
               </div>
             </div>
           </div>
@@ -58,11 +58,9 @@ export default function Home({ suggestedProducts, discountProducts, loading, err
                 className="h-[430px] w-full rounded-[1.5rem] object-cover"
               />
               <div className="absolute bottom-8 left-8 right-8 rounded-3xl bg-slate-950/90 p-5 text-white">
-                <p className="text-sm uppercase tracking-[0.25em] text-slate-300">Featured experience</p>
-                <p className="mt-2 text-xl font-semibold">Clean product discovery and simple checkout flow</p>
-                <p className="mt-1 text-sm text-slate-300">
-                  Hero, suggested products, detailed view, and discount cards all in one project.
-                </p>
+                <p className="text-sm uppercase tracking-[0.25em] text-slate-300">Featured electronics</p>
+                <p className="mt-2 text-xl font-semibold">Trending gadgets with clear pricing and simple shopping</p>
+                <p className="mt-1 text-sm text-slate-300">Explore the hero picks, featured products, and discount cards.</p>
               </div>
             </div>
           </div>
@@ -111,7 +109,7 @@ export default function Home({ suggestedProducts, discountProducts, loading, err
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-500">Discount Products</p>
-            <h2 className="mt-2 text-3xl font-bold text-slate-950">Best deals with simple card layout</h2>
+            <h2 className="mt-2 text-3xl font-bold text-slate-950">Best electronics deals in card layout</h2>
           </div>
           <Link
             to="/products"
@@ -120,8 +118,7 @@ export default function Home({ suggestedProducts, discountProducts, loading, err
             Explore more
           </Link>
         </div>
-
-          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {discountProducts.map((product, index) => (
             <div
               key={product._id}

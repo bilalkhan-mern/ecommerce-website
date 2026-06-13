@@ -87,20 +87,20 @@ export default function Products({ products, loading, error, onBuyNow, orderingI
   const discountProducts = [...displayedProducts].sort((left, right) => right.discount - left.discount).slice(0, 3);
 
   let pageTitle = "Browse every electronics item";
-  let pageSubtitle = "Find the latest electronics products stored in MongoDB.";
+  let pageSubtitle = "Explore curated electronics across categories, deals, and new arrivals.";
 
   if (category) {
     pageTitle = `${category.charAt(0).toUpperCase() + category.slice(1)} products`;
-    pageSubtitle = "This category is loaded from the database and shown in product cards.";
+    pageSubtitle = "Browse matching electronics in clean product cards.";
   } else if (section === "deals") {
     pageTitle = "Deals and offers";
     pageSubtitle = "Discounted products and special offers from the electronics catalog.";
   } else if (section === "trending") {
     pageTitle = "Trending products";
-    pageSubtitle = "Popular products highlighted from the same MongoDB collection.";
+    pageSubtitle = "Popular electronics highlighted in one place.";
   } else if (section === "new-arrivals") {
     pageTitle = "New arrivals";
-    pageSubtitle = "Fresh electronics products you can add directly in MongoDB.";
+    pageSubtitle = "Fresh electronics ready to explore.";
   }
 
   const handleSelect = (product) => {
